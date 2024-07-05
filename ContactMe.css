@@ -1,0 +1,46 @@
+p{
+    color: white;
+    font-size: 20px;
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+#ContactInstruct{
+    text-align: center;
+}
+
+form{
+    margin-left: 15%;
+    position: absolute;
+}
+
+#Socials{
+    margin-top: 10px;
+    margin-left: 60%;
+    position: absolute;
+    text-align: center;
+}
+
+#Socials a{
+    width: 125px;
+    height: 25px;
+    margin-top: 10px;
+    font-size: 18px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    display: block;
+    background-color: #fa4616;
+}
+
+#Field{
+    margin-left: 90%;
+}
+
+
+#Prompt{
+    position: absolute;
+    width:165px;
+}

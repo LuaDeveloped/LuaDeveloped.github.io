@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"; lang = "en">
+    <head>
+        <meta http-equiv="content-type" content="/html; charset=utf-8"/>
+        <title>Feedback</title>
+        <link rel="stylesheet" href="Weboutline.css">
+        <link rel="stylesheet" href="SiteFeedBack.css">
+        <script lang="java-script">
+            function CheckData(){
+                if(document.Feedback.FeedText.value.length < 1){
+                    alert("No feedback!")
+                    return false
+                }
+                if(document.Feedback.FeedText.value == "Please enter your feedback here!"){
+                    alert("No feedback!")
+                    return false
+                }
+                return true
+            }
+            function Submit(){
+                if(!CheckData()){
+                    return
+                }
+                alert("Submitted Successfully")
+            }
+        </script>
+    </head>
+    <body>
+        <div id="Content">
+            <h1>Website Feedback</h1>
+            <p>Please give me feedback of what I could work on to make my site more appealing!</p>
+            <form name="Feedback">
+                <textarea name="FeedText" rows="30" cols="100">Please enter your feedback here!</textarea> <br>
+                <input type="button" value="Submit" onclick="Submit()"> 
+            </form>
+        </div>
+        <div id="Menu">
+            <ul>
+                <li><a href="index.html">About Me</a></li>
+                <li><a href="Resume.html">Resume</a></li>
+                <li><a href="Portfolio.html">Portfolio</a></li>
+                <li><a href="SiteFeedBack.html">Site Feedback</a></li>
+                <li><a href="ContactMe.html">Contact Me</a></li>
+              </ul>
+        </div>
+    </body>
+</html>

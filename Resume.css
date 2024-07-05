@@ -1,0 +1,33 @@
+#Resume{
+    width: 70%;
+    height: 95%;
+    margin-left: 15%;
+    background-color: #ffffff;
+}
+#Section{
+    border-bottom: 3px solid #8a9ec49c;
+}
+
+h3{
+    color:rgb(75, 144, 156);
+}
+
+#col1{
+    margin-left: 5%;
+}
+
+#col2{
+    margin-left: 15%;
+}
+
+#col2 p{
+    font-size: 18px;
+}
+
+#col2 ul{
+    margin-left: 5%;
+}
+
+#TSection{
+    display: flex;
+}

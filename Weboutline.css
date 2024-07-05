@@ -1,0 +1,47 @@
+body{
+    background-color: #132431;
+}
+
+#Menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}   
+  
+h1{
+    text-align: center;
+    color: white;
+}
+
+#Menu li a {
+    margin-top: 4%;
+    margin-bottom: 4%;
+    font-size: 18px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    display: block;
+    padding: 8px 0 8px 0;
+    background-color: #fa4616;
+}
+
+#Content{
+    position: absolute;
+    top: 1%;
+    left: 11%;
+    width: 86%;
+    height: 160%;
+    padding: 1%;
+    background-color: #1d374a;
+}
+
+#Menu{
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    width: 7%;
+    height: 160%;
+    padding: 1%;
+    background-color: #1d374a;
+}

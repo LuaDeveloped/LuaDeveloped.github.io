@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"; lang = "en">
+    <head>
+        <meta http-equiv="content-type" content="/html; charset=utf-8"/>
+        <title>Contact Me</title>
+        <link rel="stylesheet" href="Weboutline.css">
+        <link rel="stylesheet" href="ContactMe.css">
+        <script lang="java-script">
+            function CheckData(){
+                if(document.ContactForm.First.value.length < 1){
+                    alert("Empty first name")
+                    return false
+                }
+                if(document.ContactForm.Last.value.length < 1){
+                    alert("Empty last name")
+                    return false
+                }
+                if(document.ContactForm.Email.value.length < 1 && document.ContactForm.Phone.value.length < 1){
+                    alert("Submit either email or phone")
+                    return false
+                }
+                NumFailed = false
+                First = document.ContactForm.Phone.value.substring(0,3)
+                Middle = document.ContactForm.Phone.value.substring(4,7)
+                Last = document.ContactForm.Phone.value.substring(8,13)
+                for (let i = 0; i < First.length; i++) {
+                    if(isNaN(parseInt(First.charAt(i)))){
+                        alert("invalid phone")
+                        return false
+                    }
+                }
+                for (let i = 0; i < Middle.length; i++) {
+                    if(isNaN(parseInt(Middle.charAt(i)))){
+                        alert("invalid phone")
+                        return false
+                    }
+                }
+                for (let i = 0; i < Last.length; i++) {
+                    if(isNaN(parseInt(Last.charAt(i)))){
+                        alert("invalid phone")
+                        return false
+                    }
+                }
+                return true
+            }
+            function Submit(){
+                if(!CheckData()){
+                    return
+                }
+                alert("Submitted Successfully")
+            }
+        </script>
+    </head>
+    <body>
+        <div id="Content">
+            <h1>Contact Me</h1>
+            <p id = "ContactInstruct">Just leave your infomation in the boxes below and I will contact you as soon as possible</p>
+            <p id = "ContactInstruct">or contact me on my social media!</p>
+            <form name="ContactForm">
+                <div id="Prompt">
+                    <p id="FField">First name:</p>
+                    <p id="FField">Last name:</p>
+                    <p id="FField">Email:</p>
+                    <p id="FField">Phone Number:</p>
+                </div>
+                <div id="Field">
+                    <p id = "Input"><input type="text" name="First" value=""></p>
+                    <p id = "Input"><input type="text" name="Last" value=""></p>
+                    <p id = "Input"><input type="email" name="Email" value=""></p>
+                    <p id = "Input"><input type="text" name="Phone" value=""></p>
+                    <p>
+                        <input type="button" value="Submit" onclick="Submit()"> 
+                    </p>
+                </div>
+            </form>
+            <div id="Socials">
+                <a href="https://www.facebook.com/gavin.newman.56" target="_blank">Facebook</a>
+                <a href="https://www.linkedin.com/in/gavin-newman/" target="_blank">LinkedIn</a>
+                <a href="https://twitter.com/LuaDeveloped" target="_blank">X</a>
+                <a href="mailto:ngavin421@gmail.com" target="_blank">Gmail</a>
+            </div>
+        </div>
+        <div id="Menu">
+            <ul>
+                <li><a href="index.html">About Me</a></li>
+                <li><a href="Resume.html">Resume</a></li>
+                <li><a href="Portfolio.html">Portfolio</a></li>
+                <li><a href="SiteFeedBack.html">Site Feedback</a></li>
+                <li><a href="ContactMe.html">Contact Me</a></li>
+              </ul>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,28 @@
+#ProjContainer{
+    width: 80%;
+    height: 175px;
+    margin-top: 10px;
+    margin-left: 10%;
+    text-decoration: none;
+    display: block;
+    background-color: #fa4616;
+}
+
+#ProjImg{
+    position: absolute;
+    height: 175px;
+    width: 200px;
+}
+#Title{
+    position: absolute;
+    color: white;
+    margin-left: 235px;
+}
+#Description{
+    position: absolute;
+    color: white;
+    width: 1000px;
+    height: 140px;
+    margin-top: 50px;
+    margin-left: 235px;
+}
